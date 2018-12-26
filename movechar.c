@@ -16,23 +16,23 @@ int main()
         {
             mvprintw(x,y," ");
         }
-            switch(ch) // the real value
+            switch(ch) 
             { 
                 case KEY_UP:
                     x=x-1;
-                    mvprintw(x, y,"A");// printf("A");// code for arrow up
+                    mvprintw(x, y,"A");
                     break;
                 case KEY_LEFT:
                     y=y-1;
-                    mvprintw(x, y,"A");// code for arrow down
+                    mvprintw(x, y,"A");
                     break;
                 case KEY_RIGHT:
                     y=y+1;
-                    mvprintw(x, y,"A");// code for arrow right
+                    mvprintw(x, y,"A");
                     break;
                 case KEY_DOWN:
                     x=x+1;
-                    mvprintw(x, y,"A");// code for arrow left
+                    mvprintw(x, y,"A");
                     break;
             }
             
