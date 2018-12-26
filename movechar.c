@@ -10,7 +10,6 @@ int main()
     curs_set(0);
     while(1)
     {
-        wrefresh(stdscr);
         ch = getch();
         if(ch)
             mvprintw(x,y," ");
