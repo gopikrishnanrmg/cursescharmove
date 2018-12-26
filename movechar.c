@@ -13,28 +13,27 @@ int main()
         wrefresh(stdscr);
         ch = getch();
         if(ch)
-        {
             mvprintw(x,y," ");
+        
+        switch(ch) 
+        { 
+            case KEY_UP:
+                x=x-1;
+                mvprintw(x, y,"A");
+                break;
+            case KEY_LEFT:
+                y=y-1;
+                mvprintw(x, y,"A");
+                break;
+            case KEY_RIGHT:
+                y=y+1;
+                mvprintw(x, y,"A");
+                break;
+            case KEY_DOWN:
+                x=x+1;
+                mvprintw(x, y,"A");
+                break;
         }
-            switch(ch) 
-            { 
-                case KEY_UP:
-                    x=x-1;
-                    mvprintw(x, y,"A");
-                    break;
-                case KEY_LEFT:
-                    y=y-1;
-                    mvprintw(x, y,"A");
-                    break;
-                case KEY_RIGHT:
-                    y=y+1;
-                    mvprintw(x, y,"A");
-                    break;
-                case KEY_DOWN:
-                    x=x+1;
-                    mvprintw(x, y,"A");
-                    break;
-            }
             
         ch=0;
     }
